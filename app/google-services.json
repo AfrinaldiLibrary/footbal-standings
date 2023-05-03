@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940307957207",
+    "project_id": "standings-football-1fc11",
+    "storage_bucket": "standings-football-1fc11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940307957207:android:be2f0c3df2820b5bf37792",
+        "android_client_info": {
+          "package_name": "com.klikgazz.footballstandings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940307957207-h65it65fbhisvlesv3rti4q97bk7negd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUSDGHAl2hvaVgB2pcOZid8V33IwWAFhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940307957207-h65it65fbhisvlesv3rti4q97bk7negd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

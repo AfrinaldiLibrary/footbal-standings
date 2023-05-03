@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.score.InputScoreActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_score" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_club_name_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="Nama Klub"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#4D000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.32" />
+
+        <EditText
+            android:id="@+id/et_score_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#4D000000"
+            app:layout_constraintStart_toEndOf="@+id/et_club_name_home"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.1" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_score_home"
+            app:layout_constraintEnd_toStartOf="@+id/et_score_away"
+            app:layout_constraintStart_toEndOf="@+id/et_score_home"
+            app:layout_constraintTop_toTopOf="@+id/et_score_home" />
+
+        <EditText
+            android:id="@+id/et_score_away"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#4D000000"
+            app:layout_constraintEnd_toStartOf="@+id/et_club_name_away"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.1" />
+
+        <EditText
+            android:id="@+id/et_club_name_away"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:hint="Nama Klub"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#4D000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.32" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah (+)"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Simpan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
